@@ -8,11 +8,11 @@ mongoose.connect('mongodb://localhost/my_database',{useNewUrlParser:true});
 // },(error,blogpost)=>{
 //     console.log(error,blogpost)
 // })
-id="614d7e6a0368c73b4b46a26f"
+// id="614d7e6a0368c73b4b46a26f"
 
-BlogPost.findById(id,(error,blogpost)=>{
-    console.log(error,blogpost)
-})
+// BlogPost.findById(id,(error,blogpost)=>{
+//     console.log(error,blogpost)
+// })
 
 // BlogPost.findByIdAndUpdate(id,{title:'Quantum energy efficiency on United States farms'},(error,blogpost)=>{
 //     console.log(error,blogpost)
