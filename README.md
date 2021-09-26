@@ -51,7 +51,7 @@ We will be using Summernote so that user can write thier blog like a editor kind
 
 
 We will be using Mongodb atlas with 3 clusters. The read write data can be visualized via MongoDb GUI.
-![](https://github.com/raj911tx/BlogPage/blob/master/data%20page.PNG)
+![](https://github.com/raj911tx/BlogPage/blob/master/database%20matrics.PNG)
 
 We can also visualize the data rate(read and write) and monitor if in case of any abnormility.
 ![](https://github.com/raj911tx/BlogPage/blob/master/data%20page.PNG)
