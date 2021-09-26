@@ -22,7 +22,7 @@ const flash=require('connect-flash')
 
 
 
-mongoose.connect('',{useNewUrlParser:true})
+mongoose.connect('mongodb+srv://raj911tx:freewifi@cluster0.7p6rh.mongodb.net/my_database',{useNewUrlParser:true})
 const app=new express()
 app.set('view engine','ejs')
 global.loggedIn=null
@@ -43,9 +43,12 @@ app.use("*",(req,res,next)=>{
 app.use(flash());
 
 
-
+let port=process.env.PORT
+if(port==null || port==""){
+    port=4000;
+}
 app.listen(4000,()=>{
-    console.log('App listening on port 4000')
+    console.log('App listening...')
 })
 
 app.get('/',homeController)

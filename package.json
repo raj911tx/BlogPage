@@ -13,6 +13,9 @@
   },
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node":"14.17.6"
+  },
   "bugs": {
     "url": "https://github.com/raj911tx/BlogPage/issues"
   },
