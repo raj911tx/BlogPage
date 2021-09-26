@@ -22,7 +22,7 @@ const flash=require('connect-flash')
 
 
 
-mongoose.connect('mongodb+srv://raj911tx:freewifi@cluster0.7p6rh.mongodb.net/my_database',{useNewUrlParser:true})
+mongoose.connect('',{useNewUrlParser:true})
 const app=new express()
 app.set('view engine','ejs')
 global.loggedIn=null
