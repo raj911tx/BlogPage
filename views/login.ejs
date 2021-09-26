@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <%-include('layouts/header');-%>
+    <body>
+        <%-include('layouts/navbar');-%>
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('/assets/img/contact-bg.jpg')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h1>Login</h1>
+                            <span class="subheading">Wanna post blog too!! Log into account right now!</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="my-5">
+                            <form action="/users/login" id="postform" method="POST">
+                                <div class="form-floating">
+                                    <input class="form-control" id="username" name="username" type="text" placeholder="Enter your username ..." data-sb-validations="required" />
+                                    <label for="name">User Name</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                </div>
+
+                                <div class="form-floating">
+                                    <input class="form-control" id="password" name="password" type="password" placeholder="Enter your password ..." data-sb-validations="required" />
+                                    <label for="name">Password</label>
+                                    <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                                </div>                               
+                                <br />
+                                <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error Login</div></div>
+                                <!-- Submit Button-->
+                                <button class="btn btn-primary text-uppercase" id="submitButton" type="submit">Login</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <%-include('layouts/footer');-%> 
+        <%-include('layouts/scripts');-%>
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

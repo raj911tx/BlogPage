@@ -30,12 +30,18 @@
                                     <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
                                 </div>
                                 <div class="form-floating">
-                                    <textarea class="form-control" id="body" name='body' placeholder="Enter your Description here..." style="height: 20rem" data-sb-validations="required"></textarea>
                                     <label for="message">Description</label>
-                                    <div class="invalid-feedback" data-sb-feedback="Description:required">A Description is required.</div>
+                                        <textarea class="form-control" id="summernote" name='body' placeholder="Enter your Description here..." style="height: 20rem" data-sb-validations="required"></textarea>
+                                    <script>
+                                        $('#summernote').summernote({
+                                            placeholder: 'What is in your mind....',
+                                            tabsize: 2,
+                                            height: 100
+                                        });
+                                    </script>
                                 </div>
                                 <div class="form-floating">
-                                    <div class="form-control">
+                                    <div class="mb-3">
                                         <label>Image</label>
                                         <input type='file' class="form-floating" id="image" name="image">
                                     </div>
